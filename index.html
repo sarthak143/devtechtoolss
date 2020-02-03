@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FrontendFunn - Bootstrap 4 Sidebar Navigation Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark  justify-content-sm-start fixed-top"
+    >
+      <div class="container-fluid">
+        
+        <button class="navbar-toggler align-self-start" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="heading-mobile d-block d-sm-none"><h3>@IHG</h3></div>
+        <input class="d-block d-sm-none" id="header-submit" type="button" name="header-submit" title="Click to search" onclick="return redirect(&quot;https://me2.ihgmerlin.com&quot;)">
+        <div
+          class="collapse navbar-collapse  p-lg-0  mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
+          id="navbarSupportedContent"
+        >
+        <div class="headerSearchContainer d-none d-md-block d-lg-block" id="header-search-div">
+          <label for="siteSearchKeywords" class="hidden">Search</label>
+          <input class="placeholder headerAutoCompleteInput ui-autocomplete-input" title="Search Merlin" type="text" name="searchFieldName" value="I'm looking for" id="siteSearchKeywords" onfocus="onFocusCityValidation(this)" onblur="onBlurCityValidation(this)" onkeyup="inputKeyUp(event)" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+          <span class="divider">|</span>
+          
+          <select id="headersearch-select" style="display: none;">
+            <option>Merlin</option>
+            <option>People directory</option>
+                         <option>MyLearning</option>
+          </select><a class="ui-selectmenu ui-widget ui-state-default ui-corner-all ui-selectmenu-dropdown" id="headersearch-select-button" role="button" href="#" aria-haspopup="true" aria-owns="headersearch-select-menu" style="width: 138px;"><span class="ui-selectmenu-status">Merlin</span><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span></a>
+          <span class="divider">|</span>
+          <label for="header-submit" title="Header Submit" class="hidden">Search Submit</label>
+          <input id="header-submit" type="button" name="header-submit" title="Click to search" onclick="return redirect(&quot;https://me2.ihgmerlin.com&quot;)">
+        </div>
+        <ul class="nav flex-column d-md-nne d-lg-none  ">
+          <li class="nav-item"><a class="nav-link closebtn" href="#">×</a></li>
+        
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">You @IHG</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Apps</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sites</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+       
+      </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="overlay"></div>
+    <!-- <div class="container py-4 my-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Left Sidebar</h1>
+          <p>Switch the Repo Branch for the Right Side Bar</p>
+        </div>
+      </div>
+    </div> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+      integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
